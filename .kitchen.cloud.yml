@@ -25,7 +25,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[nginx::default]
+      - recipe[um-nginx-cookbook::default]
     verifier:
       inspec_tests:
         - test/integration/default
