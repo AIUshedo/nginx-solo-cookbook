@@ -4,12 +4,12 @@ driver:
   region: eu-west-1
   require_chef_omnibus: true
   instance_type: t2.micro
-  subnet_id: subnet-0e9b6138ff1ce18f2
+  subnet_id: subnet-027e61c7c677725f5
   associate_public_ip: true
   aws_ssh_key_id: DevOpsStudents
 
 provisioner:
-  name: chef_zero
+  name: chef_solo
   # You may wish to disable always updating cookbooks in CI or other testing environments.
   # For example:
   #   always_update_cookbooks: <%= !ENV['CI'] %>
