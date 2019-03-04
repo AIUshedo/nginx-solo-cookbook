@@ -33,7 +33,7 @@ it 'should install nginx' do
      end
 
      it 'should create an nginx.conf template in etc/nginx' do
-      expect(chef_run).to create_template("/etc/nginx/nginx.conf").with_variables(proxy_port: 7000)
+      expect(chef_run).to create_template("/etc/nginx/nginx.conf").with_variables(proxy_port: 9292)
     end
 end
 end
